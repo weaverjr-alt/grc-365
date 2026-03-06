@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Weaver Forms </title>
+
+<style>
+    @font-face {
+        font-family: Georgia;
+        src: url("Georgia.ttf");
+    } * {
+        margin: 0;
+        padding: 0;
+    } body {
+        background: whitesmoke;
+    } #page {
+        width: 928px;
+        height: auto;
+        background: white;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px gray;
+        margin: 0 auto;
+    } main {
+        width: 80%;
+        height: auto;
+        margin: 36px auto;
+   
+    } header h1 {
+        font: 48pt/1.4em 'Dancing Script';
+        text-align: center;
+        margin-top: 24px;
+        text-shadow: 2px 3px 6px goldenrod;
+    } header p {
+        font: 14pt/1.4em Georgia, serif;
+        width: 65ch;
+        margin: 24px auto;
+    } li {
+        width: 20%;
+        height: 35px;
+        border-radius: 6px;
+        list-style: none;
+        text-align: center;
+        font: 14pt/1.8em Roboto, sans-serif;
+        background: rgba(125,147,151,0.50);
+        margin: 0 auto;
+        display: block;
+    } a li {
+        color: black;
+    } a li:hover {
+        background: lightgray;
+    } a {
+        text-decoration: none;
+    } form {
+        width: 600px;
+        margin: 0 auto;
+        border-radius: 12px;
+        background: rgba(125,147,151,0.50);
+        padding: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font: 14pt/1.4em Georgia;
+    } #personal input {
+        width: 100%;
+        height: 35px;
+    } #personal textarea {
+        width: 100%;
+    } label {
+        margin-top: 12px;
+    } select, input[type="submit"] {
+        font: 12pt/1.4em Roboto;
+    } input[type="submit"] {
+        width: 200px;
+        height: 40px;
+        margin: 24px auto;
+        background: lightgreen;
+        border-radius: 6px;
+    } input[type="submit"]:hover {
+        opacity: 0.75;
+    } fieldset {
+        margin: 8px 0 8px 0;
+        padding: 12px;
+    } footer {
+        width: 80%;
+        height: auto;
+        min-height: 100px;
+        margin: 0 auto 48px auto;
+    } footer p {
+        font: 14pt/1.4em Georgia, serif;
+    } footer h2 {
+        font: bold 14pt/1.4em Georgia, serif;
+        text-align: center;
+    }
+</style>
+<script language="JavaScript">
+    function toggle(source) {
+        checkboxes = document.getElementsByName('system');
+        for(var checkbox in checkboxes)
+        checkboxes[checkbox].checked = source.checked;
+    }
+</script>
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            
+            <h1>Contact</h1>
+        </header>
+        <main>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+      
+            <input type="hidden" name="access_key" value="6ea120b7-cd45-45b2-9d04-d25d239c2088">
+
+        <div id="personal">        
+            <label>Name</label>
+            <input type="text" name="name" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+            <label>Subject</label>
+            <input type="text" name="title" required>
+            <label>Message</label>
+            <textarea name="message" rows="6" cols="72" required></textarea>
+        </div>        
+        <fieldset>
+            <label>Reason for contacting us (check only one):</label><br/>
+            <input type="radio" id="design" name="reason" value="Design">
+            <label for="html">Design services</label>
+            <br/>
+            <input type="radio" id="consulting" name="reason" value="Consulting">
+            <label for="css">Consulting</label>
+            <br/>
+            <input type="radio" id="interface" name="reason" value="UXD">
+            <label for="interface">Interface design</label>
+            <br/>
+            <input type="radio" id="other" name="reason" value="Other">
+            <label for="other">Other</label>
+        </fieldset>
+        <fieldset>
+            <label>What type of system(s) do you have (check all that apply)?</label><br/>
+            <input type="checkbox" id="system" name="system" value="Mac"  onClick="toggle(this)">
+            <label for="system1"> Check/uncheck all</label><br/>
+            <input type="checkbox" id="system1" name="system" value="Mac">
+            <label for="system1"> MacOS</label><br/>
+            <input type="checkbox" id="system2" name="system" value="Windows">
+            <label for="system2"> Windows</label><br/>
+            <input type="checkbox" id="system3" name="system" value="UNIX">
+            <label for="system3"> UNIX</label>
+        </fieldset>
+        <fieldset>
+            <label for="time">What is your timeframe?</label>
+            <select id="time" name="time">
+            <option value="asap">ASAP</option>
+            <option value="week">this week</option>
+            <option value="month">this month</option>
+            <option value="quarter">this quarter</option>
+            </select>
+        </fieldset>           
+    <input type="submit" value="Send">
+</form>
+</main>
+<footer>
+    
+</footer>
+</div>
+</body>
+</html>
