@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Capital Over Humanity</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+
+body {
+  margin: 0;
+  background: #e5e5e5;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.hero {
+  background: #1f2f5c;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* CURSIVE TITLE */
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.8rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 220px;
+}
+
+.cta {
+  background: #d71920;
+  color: white;
+  padding: 14px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #8c0f14;
+  transition: 0.25s ease;
+}
+
+.cta small {
+  display: block;
+  font-size: 0.65rem;
+  font-family: 'Inter', sans-serif;
+  margin-top: 5px;
+  opacity: 0.85;
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 0 #8c0f14;
+}
+
+
+.content {
+  background: #f3f3f3;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.content p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* VIDEO */
+.video-wrapper {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.video-box {
+  width: 100%;
+  height: auto;
+  border: 2px solid #aaa;
+  background: black;
+}
+
+
+.take-action {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.take-action h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.take-action p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+
+.secondary-btn {
+  margin-top: 10px;
+  background: #d71920;
+  color: white;
+  padding: 14px 28px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #8c0f14;
+  transition: all 0.25s ease;
+}
+
+.secondary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 0 #8c0f14;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+
+@media (max-width: 900px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .side {
+    flex-direction: row;
+    justify-content: center;
+    max-width: none;
+  }
+
+  .cta {
+    font-size: 1rem;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<section class="hero">
+
+  <h1>Capital Over Humanity</h1>
+
+  <div class="main-layout">
+
+
+    <div class="side">
+      <button class="cta">
+        WORK HARDER
+        <small>(We aren’t paying you a living wage no matter what)</small>
+      </button>
+    </div>
+
+  
+    <img src="COH WEBSITE art in center.png" alt="Main Art" class="main-image">
+
+   
+    <div class="side">
+      <button class="cta">
+        APPLY NOW
+        <small>(Get denied even though you're qualified)</small>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section class="content">
+  <p>
+    Many Americans want free healthcare, higher wages, affordable housing,
+    and an overall better quality of life. Yet nothing changes. As the wealth
+    gap grows, it becomes increasingly clear that those at the top are not
+    concerned with improving society.
+  </p>
+
+
+  <div class="video-wrapper">
+    <video controls class="video-box">
+      <source src="ScreenRecording_04-20-2026 17-11-22_1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+<section class="take-action">
+  <h2>Take Action</h2>
+  <p>
+    Change won't come from those who benefit from the status quo.  
+    It's up to us to demand better.
+  </p>
+
+  <button class="secondary-btn">GET INVOLVED</button>
+</section>
+
+<footer>
+  © 2026 — Shawn Weaver
+</footer>
+
+</body>
